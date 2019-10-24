@@ -1,11 +1,27 @@
-# R720-15IKBN-Hackintosh-Clover
-拯救者 R720-15IKBN i5 7300HQ HD630 10.15成功 clover
+# R720-15IKBN-Hackintosh-EFI
+拯救者 R720-15IKBN i5 7300HQ HD630 10.15 OC Clover 双引导
 
 ## 联想拯救者R720黑苹果 Catalina
 **该Clover引导可直接使用macOS catalina(10.15)正式版**
+
 *这个Clover本人已亲自测试*
 
+#### 帮忙解决目前存在的问题可联系本人QQ：`1043870470`（本人是个小白，睡眠一直搞不起来）
+
 * * *
+> #### *更新：2019.10.24*
+> **增加OC启动配置**(具体效果与clover一样，releases里面下载)
+> 已入OC坑，Clover暂时不更新（不知道是不是错觉，感觉OC比CLOVER进系统速度快）
+> ##### 使用须知
+> 自行加入图上的三码，可参考：黑果小兵的 [精解OpenCore](https://blog.daliansky.net/OpenCore-BootLoader.html) `PlatformInfo`那一节
+> ![1571917343379.jpg](photo/1571917343379.jpg)
+> 
+> ##### OC在本机目前存在的问题：
+> * 引导windows不行，会蓝屏(*别的机器不知道怎么样，但是本机是蓝屏，进Windows还是按F12吧*)
+> * 睡眠还是不行（有没有大佬帮忙解决一下啊）
+
+* * *
+
 > #### *更新：2019.10.21*
 > *修复触摸板手势*
 > **不能修改键盘的修饰键，不然触摸板大部分手势都失效**
