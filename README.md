@@ -4,9 +4,19 @@
 ## 联想拯救者R720黑苹果 Catalina
 **该Clover引导可直接使用macOS catalina(10.15)正式版**
 
-*这个Clover和OC本人已亲自测试*
+*Clover和OC本人已亲自测试*
 
 **CLOVER暂时不维护** *（只测试到10.15）*，本人已入坑OC，已在**10.15.1** ，**10.15.2**中测试成功
+
+------
+
+> #### 更新：2020.01.26
+>
+> 更新OpenCore 0.5.5版本
+>
+> 升级一些驱动
+>
+> usb定制可能会解决睡眠问题，暂时没时间测试，可自行测试，参考 [Hackintool(原Intel FB-Patcher)使用教程及插入姿势](https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html) 
 
 ------
 
