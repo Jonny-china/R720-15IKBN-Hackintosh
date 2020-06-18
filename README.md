@@ -1,3 +1,5 @@
+# 本项目暂时停止更新，工作太忙，等闲下来再折腾
+
 # R720-15IKBN-Hackintosh-EFI
 拯救者 R720-15IKBN i5 7300HQ HD630 10.15 OC Clover 双引导
 
