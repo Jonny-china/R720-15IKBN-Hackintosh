@@ -42,107 +42,105 @@
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.ApplePS2Keyboard</string>
-			<key>Debug</key>
-			<false/>
 			<key>Extended Functions</key>
 			<dict>
 				<key>F13</key>
-				<string>CTRL TAB</string>
+				<string>ALT CMD ESC</string>
 				<key>F14</key>
-				<string>CTRL DAW</string>
+				<string></string>
 				<key>F15</key>
-				<string>CTRL 2</string>
+				<string></string>
 				<key>F16</key>
-				<string>CTRL 3</string>
+				<string>ALT CMD D</string>
 				<key>F17</key>
-				<string>CTRL 4</string>
+				<string>CTRL DAW</string>
 				<key>F18</key>
-				<string>CTRL 5</string>
+				<string>CTRL UAW</string>
 				<key>F19</key>
-				<string>CTRL 6</string>
+				<string>CTRL LAW</string>
 				<key>F20</key>
-				<string>CTRL 7</string>
+				<string>CTRL RAW</string>
 				<key>F21</key>
-				<string>CTRL 8</string>
+				<string></string>
 				<key>F22</key>
-				<string>CTRL 9</string>
+				<string></string>
 				<key>F23</key>
-				<string></string>
+				<string>CMD Q</string>
 				<key>F24</key>
-				<string></string>
+				<string>CMD H</string>
 			</dict>
 			<key>Fn Keys Mode 1</key>
 			<dict>
 				<key>BrightnessDown</key>
-				<string>disable</string>
+				<string>F1</string>
 				<key>BrightnessUp</key>
-				<string>disable</string>
+				<string>F2</string>
 				<key>KBBacklightDown</key>
-				<string>disable</string>
+				<string>F3</string>
 				<key>KBBacklightUp</key>
-				<string>disable</string>
+				<string>F4</string>
 				<key>Launchpad</key>
-				<string>disable</string>
+				<string>F4</string>
 				<key>MediaNext</key>
-				<string>disable</string>
+				<string>F9</string>
 				<key>MediaPlayPause</key>
-				<string>disable</string>
+				<string>F8</string>
 				<key>MediaPrevious</key>
-				<string>disable</string>
+				<string>F7</string>
 				<key>Misson Control</key>
-				<string>disable</string>
+				<string>F3</string>
 				<key>SleepDisplay</key>
-				<string>disable</string>
+				<string>F5</string>
 				<key>Touchpad</key>
-				<string>disable</string>
+				<string>Pause</string>
 				<key>VideoMirror</key>
-				<string>disable</string>
+				<string>F6</string>
 				<key>VolumeDown</key>
-				<string>disable</string>
+				<string>F11</string>
 				<key>VolumeMute</key>
-				<string>disable</string>
+				<string>F10</string>
 				<key>VolumeUp</key>
-				<string>disable</string>
+				<string>F12</string>
 			</dict>
 			<key>Fn Keys Mode 2</key>
 			<dict>
 				<key>BrightnessDown</key>
-				<string>disable</string>
+				<string>F5</string>
 				<key>BrightnessUp</key>
-				<string>disable</string>
+				<string>F6</string>
 				<key>KBBacklightDown</key>
-				<string>disable</string>
+				<string>F3</string>
 				<key>KBBacklightUp</key>
-				<string>disable</string>
+				<string>F4</string>
 				<key>Launchpad</key>
-				<string>disable</string>
+				<string>F4</string>
 				<key>MediaNext</key>
-				<string>disable</string>
+				<string>ArrowRight</string>
 				<key>MediaPlayPause</key>
-				<string>disable</string>
+				<string>ArrowDown</string>
 				<key>MediaPrevious</key>
-				<string>disable</string>
+				<string>ArrowLeft</string>
 				<key>Misson Control</key>
-				<string>disable</string>
+				<string>F3</string>
 				<key>SleepDisplay</key>
-				<string>disable</string>
+				<string>F7</string>
 				<key>SystemSleep</key>
-				<string>disable</string>
+				<string>F1</string>
 				<key>Touchpad</key>
-				<string>disable</string>
+				<string>F9</string>
 				<key>VideoMirror</key>
-				<string>disable</string>
+				<string>F8</string>
 				<key>VolumeDown</key>
-				<string>disable</string>
+				<string>F11</string>
 				<key>VolumeMute</key>
-				<string>disable</string>
+				<string>F10</string>
 				<key>VolumeUp</key>
-				<string>disable</string>
+				<string>F12</string>
 			</dict>
 			<key>Fn keys Layout</key>
-			<string>LENOVO</string>
+			<string>NONE</string>
 			<key>Fn keys Mode</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>IOClass</key>
 			<string>ApplePS2Keyboard</string>
 			<key>IOProviderClass</key>
@@ -168,7 +166,7 @@
 				<key>Make Num Lock into Clear</key>
 				<false/>
 				<key>Make context menu key into key</key>
-				<integer>0</integer>
+				<integer>84</integer>
 				<key>Make delete key into cmd + backspace</key>
 				<false/>
 				<key>Make right alt into key</key>
@@ -176,11 +174,11 @@
 				<key>Make right control into key</key>
 				<integer>0</integer>
 				<key>Make shift + caps into Fn key</key>
-				<false/>
-				<key>Num Lock enabled at boot</key>
 				<true/>
-				<key>Swap alt and windows key</key>
+				<key>Num Lock enabled at boot</key>
 				<false/>
+				<key>Swap alt and windows key</key>
+				<true/>
 			</dict>
 			<key>ProductID</key>
 			<integer>782</integer>
