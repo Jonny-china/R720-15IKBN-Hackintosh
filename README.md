@@ -1,123 +1,64 @@
-# 本项目暂时停止更新，工作太忙，等闲下来再折腾
+# R720-15IKBN-Hackintosh
+## 联想拯救者R720黑苹果 Big Sur
 
-# R720-15IKBN-Hackintosh-EFI
-拯救者 R720-15IKBN i5 7300HQ HD630 10.15 OC Clover 双引导
+> 10.15版本请查看 [10.15分支](https://github.com/Jonny-china/R720-15IKBN-Hackintosh/tree/10.15)
 
-## 联想拯救者R720黑苹果 Catalina
-**该Clover引导可直接使用macOS catalina(10.15)正式版**
+**当前OC版本0.6.9，可直接使用macOS Big Sur(11.3)正式版，已测试成功版本：**
 
-*Clover和OC本人已亲自测试*
+- macOS Big Sur 11.3.1
 
-**CLOVER暂时不维护** *（只测试到10.15）*，本人已入坑OC，已在**10.15.1** ，**10.15.2**，**10.15.3**，**10.15.4**中测试成功
+## 使用本项目说明：
 
-------
+1. 该项目本人是测试成功的，网友使用请自行测试。
+2. 由于本人使用的是dw1560网卡，没有使用该网卡的请自行删除/OC/Kexts/目录下的`AirportBrcmFixup.kext`、`BrcmBluetoothInjector.kext`、`BrcmFirmwareData.kext`、`BrcmPatchRAM3.kext`这四个与该网卡有关的驱动，并在 `EFI/OC/config.plist/Kernel/`中关闭内核设置。
+3. `MLB`*(主板序列号)*、`SystemSerialNumber`*（序列号）*、`SystemUUID`三码需要自行设置，可使用 Hackintool.App，系统-> 序列号生成器，生成对应的三码。<img src="/photo/2.png" style="zoom:50%;" />
+4. 已加上USB定制，最好自己再定制USB，参考黑果小兵[Hackintool(原Intel FB-Patcher)使用教程及插入姿势](https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html#定制usb)。
 
-> #### 更新：2020.03.29
->
-> 更新OpenCore 0.5.7版本
->
-> 升级一些驱动
+### 配置信息
 
-------
+| 名称                    | 参数                                                         |
+| ----------------------- | ------------------------------------------------------------ |
+| 型号                    | Lenovo Rescuer R720-15IKBN                                   |
+| CPU                     | Intel Core i5-7300HQ (Kaby Lake)                             |
+| 显卡                    | 核显 HD 630，独显 GTX 1050 Ti                                |
+| 无线网卡/蓝牙（已更换） | BCM94352z(DW1560)驱动（自带网卡驱动不了，*真心玩黑苹果的建议买一个，闲鱼200不到，不玩的时候再挂上去*卖） |
 
-> #### 更新：2020.01.26
->
-> 更新OpenCore 0.5.5版本
->
-> 升级一些驱动
->
-> usb定制可能会解决睡眠问题，暂时没时间测试，可自行测试，参考 [Hackintool(原Intel FB-Patcher)使用教程及插入姿势](https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html) 
+### 已经驱动
 
-------
+- 核显HD630(独显暂时无解，已屏蔽)
 
-> #### 更新：2019.12.22
->
-> 更新OpenCore 0.5.4版本
->
-> 升级一些驱动，删除不必要的ACPI补丁
+- 声卡使用Applealc原生驱动，注入Layout ID: 28，完美支持Tpye-C耳机、3.5耳机、外放
 
-* * *
-> #### *更新：2019.11.26*
-> 更新OpenCore 0.5.3版本
-> 升级一些驱动
+- 可调节音量和亮度，小键盘可用（亮度调节，Fn+F11/F12不能使用，没有驱动，使用小键盘的<kbd>4</kbd>和<kbd>-/Pause</kbd>，来控制亮度降低和增加）
 
-* * *
-> #### *更新：2019.10.24*
-> **增加OC启动配置**(具体效果与clover一样，releases里面下载)
-> 已入OC坑，Clover暂时不更新（不知道是不是错觉，感觉OC比CLOVER进系统速度快）
-> ##### 使用须知
-> 自行加入图上的三码，可参考：黑果小兵的 [精解OpenCore](https://blog.daliansky.net/OpenCore-BootLoader.html) `PlatformInfo`那一节
-> ![1571917343379.jpg](photo/1571917343379.jpg)
-> 
-> ##### OC在本机目前存在的问题：
-> * 引导windows不行，会蓝屏(*别的机器不知道怎么样，但是本机是蓝屏，进Windows还是按F12吧*)
-> * 睡眠还是不行（有没有大佬帮忙解决一下啊）
+- USB3.0/2.0正常使用（3.0支持最高5G/s）
 
-* * *
+- 支持One Key HIDPI
 
-> #### *更新：2019.10.21*
-> *修复触摸板手势*
-> **不能修改键盘的修饰键，不然触摸板大部分手势都失效**
->
-> 单指：双击拖拽，如果不能正常工作需要去勾选 `系统偏好设置` -> `辅助功能` -> `指针控制` -> `触控板选项` -> `启用拖拽`
->
-> 两指：轻点 = 鼠标右键
->
-> 三指：
-> * 上滑：应用全屏
-> * 右滑：切换最新的app
-> * 下滑：最小化窗口
-> * 左滑：页面切换，如浏览器tab页；对应快捷键 `CTRL + TAB`
->
-> 四指：
-> * 上滑：调度中心
-> * 右滑：向右切换 全屏app
-> * 下滑：应用程序窗口（对应触控板设置里的 App Expose）
-> * 左滑：向左切换 全屏app
->
-> 五指：目前只发现点按 Dashboard操作，但10.15苹果关闭了 dashboard 所以只在浏览器界面点击才能看出效果，能打开浏览器的调试界面
+- 支持HDMI（暂不支持音频）
 
-* * *
-## 已经驱动
-* #### 核显HD630(独显暂时无解，已屏蔽)
-* #### 声卡使用Applealc原生驱动，注入Layout ID: 28，完美支持Tpye-C耳机、3.5耳机、外放
-* #### 可调节音量和亮度，小键盘可用
-* #### USB3.0/2.0正常使用（3.0支持最高5G/S）
-* #### 自动识别固态和机械
-* #### 支持One Key HIDPI
-* #### 支持HDMI
-* #### 变频ok
-* #### 触控板支持多手势
+- 变频ok，支持16档
 
-## 目前存在的问题
-* #### 亮度调节可以到 `系统偏好设置` -> `键盘` -> `快捷键` -> `显示器` 设置快捷方式
-* #### 蓝牙可使用，但无法关闭，且连接蓝牙音箱时声音可能会卡顿
-* #### 睡眠会自动唤醒，可以在节能里关闭睡眠
+- 触控板支持设置中的所有手势
 
-* * *
-*希望有朋友帮忙解决 **睡眠** 问题*
-* * *
+- 睡眠正常（定制USB驱动后）
 
-## 无法驱动
-* #### 独显GTX1050Ti。
-* #### WIFI无解，需要的可自行更换博通网卡。
+- 无线网卡/蓝牙（已更换 DW1560）
 
-## 相关截图
-![1571455150540.jpg](photo/1571455150540.jpg)
+  隔空投送正常，其他没有设备测试
 
-![1571455150540.jpg](photo/1571455568244.jpg)
+- 摄像头可用
 
-![1571455150540.jpg](photo/1571455724178.jpg)
+- 安卓USB共享网络（需配合安装 HoRNDIS-9.2.pkg）
 
-![1571455150540.jpg](photo/1571455761644.jpg)
+### 存在的问题
 
-![1571455150540.jpg](photo/1571455793130.jpg)
+- 开启HIDPI后，关机和重启时会花屏
 
-![1571455150540.jpg](photo/1571456210423.jpg)
+### 相关截图
 
-## 下载
-[https://github.com/Jonny-china/R720-15IKBN-Hackintosh-Clover/releases](https://github.com/Jonny-china/R720-15IKBN-Hackintosh-Clover/releases)
+![1.jpeg](photo/1.jpeg)
 
+![4.jpeg](photo/4.jpg)
 
-
-
+![3.jpeg](photo/3.jpg)
