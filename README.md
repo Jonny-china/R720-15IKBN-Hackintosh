@@ -4,8 +4,9 @@
 
 > 10.15 版本请查看 [10.15 分支](https://github.com/Jonny-china/R720-15IKBN-Hackintosh/tree/10.15)
 
-**当前 OC 版本 0.7.0，可直接使用 macOS Big Sur(11.3)正式版，已测试成功版本：**
+**当前 OC 版本 0.7.0，可直接使用 macOS Big Sur(11.4)正式版，已测试成功版本：**
 
+- macOS Big Sur 11.4
 - macOS Big Sur 11.3.1
 
 ## 使用本项目说明：
