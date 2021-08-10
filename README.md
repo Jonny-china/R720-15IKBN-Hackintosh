@@ -4,8 +4,9 @@
 
 > 10.15 版本请查看 [10.15 分支](https://github.com/Jonny-china/R720-15IKBN-Hackintosh/tree/10.15)
 
-**当前 OC 版本 0.7.0，可直接使用 macOS Big Sur(11.4)正式版，已测试成功版本：**
+**当前 OC 版本 0.7.0，可直接使用 macOS Big Sur(11.5.1)正式版，已测试成功版本：**
 
+- macOS Big Sur 11.5.1
 - macOS Big Sur 11.4
 - macOS Big Sur 11.3.1
 
@@ -55,11 +56,11 @@
 
 ### 存在的问题
 
-- 开启 HIDPI 后，关机和重启时会花屏
+- ~~开启 HIDPI 后，关机和重启时会花屏~~（设置成 `1424x802` 分辨率可解决，可使用RDM工具设置）
 
 ### 相关截图
 
-![1.jpeg](photo/1.jpeg)
+![1.png](photo/1.png)
 
 ![4.jpeg](photo/4.jpg)
 
