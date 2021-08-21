@@ -4,8 +4,9 @@
 
 > 10.15 版本请查看 [10.15 分支](https://github.com/Jonny-china/R720-15IKBN-Hackintosh/tree/10.15)
 
-**当前 OC 版本 0.7.0，可直接使用 macOS Big Sur(11.5.1)正式版，已测试成功版本：**
+**当前 OC 版本 0.7.2，可直接使用 macOS Big Sur(11.5.2)正式版，已测试成功版本：**
 
+- macOS Big Sur 11.5.2
 - macOS Big Sur 11.5.1
 - macOS Big Sur 11.4
 - macOS Big Sur 11.3.1
@@ -13,8 +14,13 @@
 ## 使用本项目说明：
 
 1. 该项目本人是测试成功的，网友使用请自行测试。
+
 2. 由于本人使用的是 dw1560 网卡，没有使用该网卡的请自行删除/OC/Kexts/目录下的`AirportBrcmFixup.kext`、`BrcmBluetoothInjector.kext`、`BrcmFirmwareData.kext`、`BrcmPatchRAM3.kext`这四个与该网卡有关的驱动，并在 `EFI/OC/config.plist/Kernel/`中关闭内核设置。
-3. `MLB`_(主板序列号)_、`SystemSerialNumber`_（序列号）_、`SystemUUID`三码需要自行设置，可使用 Hackintool.App，系统-> 序列号生成器，生成对应的三码。<img src="/photo/2.png" style="zoom:50%;" />
+
+3. `MLB`_(主板序列号)_、`SystemSerialNumber`_（序列号）_、`SystemUUID`三码需要自行设置，可使用 Hackintool.App，系统-> 序列号生成器，生成对应的三码。
+
+   <img src="photo/2.png" alt="2.png" style="zoom:50%;" />
+
 4. 已加上 USB 定制，最好自己再定制 USB，参考黑果小兵[Hackintool(原 Intel FB-Patcher)使用教程及插入姿势](https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html#定制usb)。
 
 ### 配置信息
