@@ -1,6 +1,6 @@
 # R720-15IKBN-Hackintosh
 
-## 联想拯救者 R720 黑苹果 Big Sur
+## 联想拯救者 R720 黑苹果 Monterey
 
 > 10.15 版本请查看 [10.15 分支](https://github.com/Jonny-china/R720-15IKBN-Hackintosh/tree/10.15)
 
