@@ -410,8 +410,6 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAWWQ==</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
 				<key>device-id</key>
 				<data>FlkAAA==</data>
 				<key>framebuffer-con1-enable</key>
