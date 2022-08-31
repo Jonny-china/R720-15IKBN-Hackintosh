@@ -4,8 +4,9 @@
 
 > 10.15 版本请查看 [10.15 分支](https://github.com/Jonny-china/R720-15IKBN-Hackintosh/tree/10.15)
 
-**当前 OpenCore 版本 0.8.0，可直接使用 macOS Monterey(12.4)正式版，已测试成功版本：**
+**当前 OpenCore 版本 0.8.3，可直接使用 macOS Monterey(12.5.1)正式版，已测试成功版本：**
 
+- macOS Monterey 12.5.1
 - macOS Monterey 12.4
 - macOS Big Sur 11.6.5
 - macOS Big Sur 11.5.2
